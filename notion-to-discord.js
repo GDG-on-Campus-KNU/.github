@@ -46,7 +46,7 @@ async function fetchNotionItems(dataSourceId) {
   const response = await axios.post(
     `https://api.notion.com/v1/data_sources/${dataSourceId}/query`,
     {
-      sorts: [{ property: "Created time", direction: "ascending" }],
+      sorts: [{ property: "생성 일시", direction: "ascending" }],
     },
     {
       headers: {
