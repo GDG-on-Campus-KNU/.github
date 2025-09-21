@@ -46,7 +46,7 @@ async function fetchNotionItems(dataSourceId) {
   const response = await axios.post(
     `https://api.notion.com/v1/data_sources/${dataSourceId}/query`,
     {
-      sorts: [{ property: "CreatedTime", direction: "ascending" }],
+      sorts: [{ property: "created_time", direction: "ascending" }],
     },
     {
       headers: {
